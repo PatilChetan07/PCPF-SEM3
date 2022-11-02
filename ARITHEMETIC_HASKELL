@@ -1,0 +1,12 @@
+main = do
+putStrLn "Arithemetic functions"
+let a = 10
+let b = 5
+putStr "additon of a and b is : "
+print(a + b)
+putStr "subtraction of a and b is : "
+print(a - b)
+putStr "multiplication of a and b is : "
+print(a * b)
+putStr "division of a by b is : "
+print(a / b)
