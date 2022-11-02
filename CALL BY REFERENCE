@@ -1,0 +1,13 @@
+#include <stdio.h>
+void change(int *num){
+    printf("before adding value inside function num = %d\n",*num);
+    *num = *num + 50;
+    printf("after adding 50 inside function num = %d\n",*num);
+}
+
+void main(){
+    int a = 100 ;
+    printf("before function call a = %d\n",a);
+    change(&a);                                  //passing reference in function
+    printf("after function call a = %d\n",a);
+}
