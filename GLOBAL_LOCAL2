@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int c;                   // global variable
+int d = 100;
+void main(){
+    int a;               // local varible
+    int b;
+    float c ;           
+    int d = 200;
+    a=20;b=40;           // intialisation
+    c = a + b;
+    printf("the value of a is :%d\n",a);
+    printf("the value of b is :%d\n",b);
+    printf("the value of c is :%f\n",c);                // the value inside the main fuunction is the output;
+    printf("the value of d is :%d\n",d);
+}
