@@ -1,0 +1,27 @@
+<html>
+<body>
+<h2>javascripts regular stings</h2>
+<p>do global search for the string abc</p>
+<p id="demo"></p>
+<script>
+    let text = "abcdefghi";
+    let result = text.match(/(a|b|c)/g);
+    if(result){
+        document.getElementById("demo").innerHTML = result;   // it will give the letters common in result and text , else invalid
+    }
+    else{
+        document.getElementById("demo").innerHTML = "Invalid";
+    }
+</script>
+</body>
+</html>
+
+<!-- i Perform case-insensitive matching
+g Perform a global match
+m Perform multiline matching -->
+
+<!-- for searching digit(single digit eg 2,3,4) in string
+text.match(/\d/g); -->
+
+<!-- for searching multidigit(eg 45,2424) in string
+text.match(/\d+/g); -->
